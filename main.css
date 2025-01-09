@@ -81,11 +81,19 @@ ul{
     box-shadow: 0 0 16px #7a8c8f;
 }
 
+ul p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 4px 0;
+}
+
 ul li{
     font-size: 16px;
     text-align: center;
     align-items: center;
     list-style-position: inside;
+    list-style: none;
     margin: auto;
     padding: 4px 0;
     cursor: pointer;
@@ -114,4 +122,8 @@ footer a{
     color: #000;
     text-decoration: none;
     font-weight: bold;
+}
+
+.riscado{
+    text-decoration: line-through;
 }

@@ -11,13 +11,13 @@ $(document).ready(function(){
         e.preventDefault();
 
         const inputActivity = $('#activity').val();
-        const newItem = $(`<li>${inputActivity}</li>`);
-        $(newItem).appendTo('ul')
-        $('#activity').val('')
-
+        const newItem = $('<li></li>');
+        $(`<li>${inputActivity}</li>`).appendTo(newItem);
+        $(newItem).appendTo('ul');
+        $('#activity').val('');
         
-        $('li').click(function(){
-            newItem.css('text-decoration', 'line-through')
+        $(newItem).on('click', function(){
+            $(this).toggleClass('riscado');
         })
     })
 })
