@@ -26,7 +26,14 @@ header{
 
 header img{
     height: 30px;
+}
+
+header .logo{
     padding-right: 12px;
+}
+
+header .arrow{
+    padding-left: 6px;
 }
 
 form{
